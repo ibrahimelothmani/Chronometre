@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chronometre</title>
+</head>
+<body>
+    <header>
+        <h1>Chronometre</h1>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <div class="stopwatch">
+                <div class="timer">
+                    <span id="minute">00</span>:
+                    <span id="second">00</span>:
+                    <span id="millisecond">00</span>
+                </div>
+                <div>
+                <button id="startBtn" onclick="start()">START</button>
+                <button id="pauseBtn" onclick="pause()">PAUSE</button>
+                <button id="stopBtn" onclick="stop()">STOP</button>
+                <button id="resetBtn" onclick="reset()">REST</button>
+            </div>
+            <div class="laps">
+                <h2 class="lap-title">Historique :</h2>
+                <ul id="laplist"></ul>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Mini Projet : (HTML + CSS + JAVASCRIPT)</p>
+        <p>@Ibrahim</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
